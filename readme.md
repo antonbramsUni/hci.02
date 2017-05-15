@@ -13,7 +13,7 @@
 
 #### Projekt Initialization
 1. download and install `nodejs` with `lastest features` from https://nodejs.org/dist/v7.10.0/node-v7.10.0.pkg
-2. open the console on windows
+2. open the console
 3. navigate to the root of the project
 4. `npm install` to install all the dependencies
 term
