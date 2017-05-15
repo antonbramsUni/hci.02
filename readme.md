@@ -1,12 +1,11 @@
 
-# Trilateration Algorhythm in JavaScript
+# Coordinate Conversion, Distance and Trilateration Algorhythms in JavaScript
 
-	let points = [
-		{c : {x:  0, y:  0}, r : 12.6},
-		{c : {x: 20, y:  0}, r : 10.8},
-		{c : {x:  5, y: 15}, r : 21.8},
-		{c : {x: 18, y: 12}, r : 19.2}
-	]
+#### Files
+- ./conversion.js
+- ./distance.js
+- ./trilateration.js
+- ./equasion.txt
 
 #### Used Software
 - nodejs, es6, nodemon

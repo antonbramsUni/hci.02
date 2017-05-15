@@ -2,13 +2,6 @@
 // Based on: http://stackoverflow.com/a/3349134
 // https://gist.github.com/alanctkc/8566411
 
-let points = [
-	{c : {x:  0, y:  0}, r : 12.6},
-	{c : {x: 20, y:  0}, r : 10.8},
-	{c : {x:  5, y: 15}, r : 21.8},
-	{c : {x: 18, y: 12}, r : 19.2}
-]
-
 var distance = (a, b) => 
 	Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2))
 
@@ -48,6 +41,13 @@ let trilaterate = p => {
 	// Find the most precisely triangulated point
 	return inters.sort((a, b) => a.off > b.off)[0].point
 }
+
+let points = [
+	{c : {x:  0, y:  0}, r : 12.6},
+	{c : {x: 20, y:  0}, r : 10.8},
+	{c : {x:  5, y: 15}, r : 21.8},
+	{c : {x: 18, y: 12}, r : 19.2}
+]
 
 console.log(trilaterate(points))
 
