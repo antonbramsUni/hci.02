@@ -16,18 +16,15 @@
 2. open the console
 3. navigate to the root of the project
 4. `npm install` to install all the dependencies
-term
 
 #### App Launch
 1. navigate to the project
 2. launch script in the console
 	- `npm run trilateration` to start the trilateration example
-	- `npm run distance` to start the trilateration distance
+	- `npm run distance` to start the distance example
 	- for more information see the section `"scipts" : {}` in `./package.json`
 
 #### Author
 - Anton Kluev
 - dev@antonkluev.com
 - https://github.com/antonkluev
-
-
