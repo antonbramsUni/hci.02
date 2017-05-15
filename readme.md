@@ -17,7 +17,7 @@
 2. open the console on windows
 3. navigate to the root of the project
 4. `npm install` to install all the dependencies
-
+term
 #### App Launch
 1. navigate to the project
 2. launch script in the console
