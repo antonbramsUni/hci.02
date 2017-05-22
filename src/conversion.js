@@ -21,7 +21,7 @@
 	}).to('kml')
 */
 
-module.exports = {
+export default {
 	
 	// Google kml
 	kml_ (value, axis) {

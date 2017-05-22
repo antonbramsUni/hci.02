@@ -1,30 +1,13 @@
 
-# Coordinate Conversion, Distance and Trilateration Algorhythms in JavaScript
+# Used Software
+- webpack, es6, sass
+- sources are in the `./src` folder
 
-#### Files
-- ./conversion.js
-- ./distance.js
-- ./trilateration.js
-- ./equasion.txt
+# App Launch
+1. open `./index.html` with your browser
+2. enjoy!
 
-#### Used Software
-- nodejs, es6, nodemon
-- for more information see sections `"dependencies" : {}` and `"devDependencies" : {}` in the `./package.json`
-
-#### Projekt Initialization
-1. download and install `nodejs` with `lastest features` from https://nodejs.org/dist/v7.10.0/node-v7.10.0.pkg
-2. open the console
-3. navigate to the root of the project
-4. `npm install` to install all the dependencies
-
-#### App Launch
-1. navigate to the project
-2. launch script in the console
-	- `npm run trilateration` to start the trilateration example
-	- `npm run distance` to start the distance example
-	- for more information see the section `"scipts" : {}` in `./package.json`
-
-#### Author
+# Author
 - Anton Kluev
 - dev@antonkluev.com
 - https://github.com/antonkluev
