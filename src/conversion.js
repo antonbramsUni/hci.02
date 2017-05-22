@@ -67,9 +67,8 @@ export default {
 	from (value) {
 		// automatic from type detection
 		let from = 
-			typeof value.lat == 'number'? 'kml':
 			value.lat.search(/[N|S]/) > -1? 'nmea':
-			value.lat.search(';') > -1? 'jpeg': null
+			value.lat.search(';') > -1? 'jpeg': 'kml'
 		// create method
 		let convertAxis = (value, method) => {return {
 			lat : this[method](value.lat, 'lat'),

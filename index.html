@@ -6,11 +6,22 @@
 </head>
 <body>
 	<!-- dom -->
-	<div class="title">Distance in Meters</div>
+	<div class="title">1. Coordinates Converter</div>
+	<div class="sub">Please input coordinates in kml (50.985435), nmea (5321.6802N) or jpeg (55; 52; 6.000000000000008) format</div>
+	<input id="lat" placeholder="latitude">
+	<input id="lan" placeholder="longitude">
+	<select id="format">
+		<option value="kml">KML</option>
+		<option value="nmea">NMEA</option>
+		<option value="jpeg">JPEG</option>
+	</select>
+	<input id="convert" type="button" value="convert">
+	<div class="value">result</div>
+	<div class="title">2. Distance in Meters</div>
 	<div class="sub">For D1A and D1B:</div><div class="value"></div>
 	<div class="sub">For D2A and D2B:</div><div class="value"></div>
 	<div class="sub">For D3A and D3B:</div><div class="value"></div>
-	<div class="title">Extra : Trilateration implementation in JS</div>
+	<div class="title">3. Extra : Trilateration implementation in JS</div>
 	<div class="sub"></div><div class="value"></div>
 </body>
 <script src="./build/index.js"></script>

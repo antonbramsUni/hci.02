@@ -10,9 +10,6 @@
 		"server": "cross-env NODE_ENV=server.dev webpack --config ./webpack.js",
 		"build": "cross-env NODE_ENV=build.prod webpack --config ./webpack.js --progress"
 	},
-	"dependencies": {
-		"fw": "https://github.com/antonkluev/fw.git"
-	},
 	"devDependencies": {
 		"cross-env": "^3.2.4",
 		"babel-core": "^6.17.0",

@@ -6,24 +6,33 @@ import trilateration from './trilateration'
 
 let print = document.querySelectorAll('.value')
 
+document.querySelector('#convert').onclick = e => {
+	let format = document.querySelector('#format')
+	let value = convert.from({
+		lat: document.querySelector('#lat').value, 
+		lon: document.querySelector('#lan').value}
+	).to(format[format.selectedIndex].value)
+	print[0].innerHTML = `lat : ${value.lat}<br>lon : ${value.lon}`
+}
+
 // DISTANCE
 let D1A = {lat: 50.974751, lon: 11.329992}
 let D1B = {lat: 50.966975, lon: 11.337546}
 let d1ad1b = distance.calculate(D1A, D1B)
 console.log('D1A - D1B:', d1ad1b, 'meters')
-print[0].innerHTML = d1ad1b + ' meters'
+print[1].innerHTML = d1ad1b + ' meters'
 
 let D2A = convert.from({lat: '50; 59; 5.165', lon: '-11; 19; 7.882'}).to('kml')
 let D2B = convert.from({lat: '5059.08608N', lon: '1119.13137E'}).to('kml')
 let d2ad2b = distance.calculate(D2A, D2B)
 console.log('D2A - D2B:', d2ad2b, 'meters')
-print[1].innerHTML = d2ad2b + ' meters'
+print[2].innerHTML = d2ad2b + ' meters'
 
 let D3A = {lat: 52.518715, lon: 13.388361}
 let D3B = {lat: 40.735649, lon: -74.010222}
 let d3ad3b = distance.calculate(D3A, D3B)
 console.log('D3A - D3B:', d3ad3b, 'meters')
-print[2].innerHTML = d3ad3b + ' meters'
+print[3].innerHTML = d3ad3b + ' meters'
 
 // TRILATERATION
 let points = [
@@ -35,4 +44,4 @@ let points = [
 // document.querySelectorAll('.sub')[3].innerHTML = JSON.stringify(points)
 let trilaterationResult = trilateration.trilaterate(points)
 console.log(trilaterationResult)
-print[3].innerHTML = `x : ${trilaterationResult.x}<br> y : ${trilaterationResult.y}`
+print[4].innerHTML = `x : ${trilaterationResult.x}<br> y : ${trilaterationResult.y}`
